@@ -102,7 +102,7 @@ fs.readdir (mddir,function(err, files) {
 					html: true,
 					breaks: true,
 					highlight: function (str, lang) {
-						if (lang && hljs.getLanguage(lang)) {
+						if (lang) {
 						try {
 							str = hljs.highlight(lang, str, true).value;
 						} catch (error) {
